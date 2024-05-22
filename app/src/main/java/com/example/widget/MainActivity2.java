@@ -79,7 +79,7 @@ public class MainActivity2 extends AppCompatActivity {
                             int TimePos = mediaPlayer.getCurrentPosition() / 1000;
                             int TimeMax = mediaPlayer.getDuration() / 1000;
                             seekBar.setProgress(mediaPlayer.getCurrentPosition()); // 시크바를 움직임
-                            if(TimePos > 60) {
+                            if(TimePos > 60) { // 음악 시간 표기
                                 if((TimePos % 60) < 10) {
                                     musicTime.setText(TimePos / 60 + ":" + 0 + TimePos % 60 + "/" + TimeMax / 60 + ":" + TimeMax % 60);
                                 }
